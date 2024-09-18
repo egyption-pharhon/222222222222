@@ -24,7 +24,7 @@ fetch('product.json')
 					</div>`
 				product.addEventListener('click', function(){
 				console.log(product)
-				     }
+				     })
 			})
 		})
 fetch('featured.json')
