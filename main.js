@@ -1,4 +1,3 @@
-
 // open list items @ media 767px
 
 function openNavList(){
@@ -6,12 +5,10 @@ function openNavList(){
 	navlist.classList.toggle("show");
 }
 
-
-
+// open details of product
 
 function openProduct(){
 	window.open("product.html", "_self")
-
 }
 //  change color of product
 let activeImage = document.querySelector('.product .images .active')
