@@ -20,11 +20,8 @@ fetch('product.json')
 						</div>
 						<p>${product.name}</p>
 						<span>$${product.price}</span>
-						<button onclick="openProduct(this.data-id)" data-id="${product.id}">Add Cart</button>
+						<button onclick="openProduct()" data-id="${product.id}">Add Cart</button>
 					</div>`
- function openProduct(id){
-				console.log(product[id])
-				     }
 			})
 		})
 fetch('featured.json')
