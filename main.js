@@ -18,7 +18,7 @@ function changeColor(newImage){
 	activeImage.src = newImage
 }
 
-let allProduct;
+export const allProduct = [];
 console.log(allProduct)
 
 
