@@ -18,7 +18,8 @@ function changeColor(newImage){
 	activeImage.src = newImage
 }
 
-
+let allProduct;
+console.log(allProduct)
 
 
 
