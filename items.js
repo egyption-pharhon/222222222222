@@ -2,10 +2,7 @@
 fetch('product.json')
 		.then(response => response.json())
 		.then(data => {
-allProduct.push(...data);
-			
 			const products = document.querySelector('.shop .content');
-			
 			data.forEach( product => {
 				products.innerHTML += `
 					<div class="box">
@@ -21,7 +18,7 @@ allProduct.push(...data);
 						</div>
 						<p>${product.name}</p>
 						<span>$${product.price}</span>
-						<button onclick="openProduct()" data-id="${product.id}">Add Cart</button>
+						<button onclick="openProduct()" >Add Cart</button>
 					</div>`
 			})
 		})
@@ -95,3 +92,4 @@ fetch('shoes.json')
 			})
 		})
 			
+		
