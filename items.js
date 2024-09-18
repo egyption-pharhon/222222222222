@@ -3,9 +3,11 @@ import { allProduct } from "./main.js";
 fetch('product.json')
 		.then(response => response.json())
 		.then(data => {
+allProduct.push(...data);
+			
 			const products = document.querySelector('.shop .content');
+			
 			data.forEach( product => {
-				allProduct += product
 				products.innerHTML += `
 					<div class="box">
 						<div class="image">
