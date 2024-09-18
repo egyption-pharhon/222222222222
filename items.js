@@ -22,9 +22,9 @@ fetch('product.json')
 						<span>$${product.price}</span>
 						<button onclick="openProduct(this.data-id)" data-id="${product.id}">Add Cart</button>
 					</div>`
-				product.addEventListener('click', function(){
-				console.log(product)
-				     })
+ function openProduct(id){
+				console.log(product[id])
+				     }
 			})
 		})
 fetch('featured.json')
