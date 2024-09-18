@@ -1,4 +1,4 @@
-import { allProduct } from "./main.js"
+import { allProduct } from "./main.js";
 
 function jsons(){
 // product in webpage
