@@ -4,8 +4,8 @@ fetch('product.json')
 		.then(response => response.json())
 		.then(data => {
 			const products = document.querySelector('.shop .content');
-			allProduct = data
 			data.forEach( product => {
+				allProduct += data
 				products.innerHTML += `
 					<div class="box">
 						<div class="image">
