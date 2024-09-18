@@ -1,4 +1,4 @@
-import { allProduct } from "items.js";
+
 // open list items @ media 767px
 
 function openNavList(){
