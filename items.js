@@ -1,5 +1,6 @@
 import { allProduct } from "./main.js"
 
+function jsons(){
 // product in webpage
 fetch('product.json')
 		.then(response => response.json())
@@ -96,4 +97,5 @@ fetch('shoes.json')
 					</div>`
 			})
 		})
-			
+			}
+jsons()
