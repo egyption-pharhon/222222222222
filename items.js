@@ -5,7 +5,7 @@ fetch('product.json')
 			const products = document.querySelector('.shop .content');
 			data.forEach( product => {
 				products.innerHTML += `
-					<div class="box">
+					<div class="box" >
 						<div class="image">
 							<img src="${product.img}">
 						</div>
@@ -16,9 +16,9 @@ fetch('product.json')
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 						</div>
-						<p>${product.name}</p>
+						<p onclick="openProduct()">${product.name}</p>
 						<span>$${product.price}</span>
-						<button onclick="openProduct()" >Add Cart</button>
+						<button >Add Cart</button>
 					</div>`
 			})
 		})
