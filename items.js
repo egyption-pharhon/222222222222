@@ -1,4 +1,4 @@
-import { allProduct } from "main.js";
+import { allProduct } from "./main.js";
 // product in webpage
 fetch('product.json')
 		.then(response => response.json())
