@@ -22,6 +22,9 @@ fetch('product.json')
 						<span>$${product.price}</span>
 						<button onclick="openProduct(this.data-id)" data-id="${product.id}">Add Cart</button>
 					</div>`
+				product.addEventListener('click', function(){
+				console.log(product)
+				     }
 			})
 		})
 fetch('featured.json')
@@ -94,15 +97,3 @@ fetch('shoes.json')
 			})
 		})
 			
-		// product in webpage
-fetch('product.json')
-		.then(response => response.json())
-		.then(data => {
-			const products = document.querySelector('.shop .content');
-			allProduct = data
-			data.forEach( product => {
-				product.addEventListener('click', function(){
-				console.log(product)
-				     }
-			})
-		})
