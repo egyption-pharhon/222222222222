@@ -94,4 +94,15 @@ fetch('shoes.json')
 			})
 		})
 			
-		
+		// product in webpage
+fetch('product.json')
+		.then(response => response.json())
+		.then(data => {
+			const products = document.querySelector('.shop .content');
+			allProduct = data
+			data.forEach( product => {
+				product.addEventListener('click', function(){
+				console.log(product)
+				     }
+			})
+		})
